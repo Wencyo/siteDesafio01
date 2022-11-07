@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Codificador</title>
+</head>
+
+<header>
+    <img class="logo" src="img/Vector.png" alt="letra a de alura">
+    <h1>Descriptografador</h1>
+</header>
+
+<body>
+    <main>
+        <section> <!--Lado esquerdo-->
+            <div class="container1">
+                <div class="espaco"></div>
+                    <textarea id="entrada" placeholder="&nbsp Apenas letras minúsculas e sem acento." ></textarea>
+                    <!--Sem comentário &nbsp-->
+                <div class="buttons">
+                    <button class="encriptar" onclick="encriptar();">
+                        Criptografar
+                    </button>
+
+                    <button class="descriptar" onclick="descriptar();">
+                        Descriptografar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section> <!--Lado direito-->
+            <div clss="container2">
+                <!--sem imagem-->
+                <textarea id="saida" placeholder="&nbsp O resultato pode ser visto aqui"></textarea>
+            </div>
+
+            <div class="buttons">
+                <button class="copiar" onclick="copiar();">
+                Copiar
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="Copyright">&copy; Copyright 2022 Wencyo </p>
+    </footer>
+</body>
+</html>
